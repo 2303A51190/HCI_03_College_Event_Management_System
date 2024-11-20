@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-image: url('https://cdn.wallpapersafari.com/42/53/ZVg68l.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .day-box {
+            background-color: #ff6b6b; 
+        }
+        .week-box {
+            background-color: #6bc6ff;  
+        }
+        .box:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .box a {
+            text-decoration: none;
+            color: inherit; 
+        }
+        .box i {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Events</h1>
+        <div class="box day-box">
+            <a href="eventsday.html">Events of the Day</a>
+        </div>
+        <div class="box week-box">
+            <a href="eventsofweek.html">Events of the Week</a>
+        </div>
+    </div>
+</body>
+</html>

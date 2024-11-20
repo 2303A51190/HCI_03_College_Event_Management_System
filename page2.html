@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="hci_project.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style> 
+    div{
+        height: 180px;
+        width:350px;
+        border: 4px solid black;
+        
+        margin-left: 450px;
+        margin-right: 250px;
+        margin-top: 250px;
+
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+       
+
+    
+    }
+    h1{
+        text-align: center;
+    }
+    button{
+         padding-left:10px;
+         padding-right: 30px;
+         text-align: center;
+    }
+     
+     
+</style>
+<script>
+    function validate()
+    {
+        let username,password;
+        username=document.getElementById("usr").value;
+        password=document.getElementById("pass").value;
+        if(username=='')
+        { 
+          window.alert("please enter username");
+        }
+        else if(password=='')
+        { 
+          window.alert("please enter password");
+        }
+        else
+            window.location.href="loginsuccess.html"
+
+         
+
+    }
+</script>
+
+
+</head>
+<body>
+   
+    <div >
+         
+        <h1>Login</h1>
+        <i class="fa-solid fa-paper-plane"></i>
+        <label for="fname">Username</label>
+        <input type="text" id="usr" placeholder="enter your Username"></input>
+        <br></br>
+        <i class="fa-solid fa-lock"></i>
+        <label for="fname" id="pass">Password</label>
+        <input type="text" id="mname" placeholder="enter your Password"></input>
+        <br></br>
+        <button onclick="validate()">Login</button>
+    </div>
+ 
+</body>
+</html>

@@ -1,0 +1,52 @@
+b{
+    color:coral;
+    background-color: black;
+     
+}
+button{
+    color:rgb(72, 0, 255);
+    background-color: burlywood;
+}
+*{
+    background-color: beige;
+}
+i{
+    color:rgb(255, 251, 0);
+    background-color: burlywood;
+    text-align: center;
+    
+}
+.vysh{
+    color:blueviolet;
+}
+#reethu{
+    color:dodgerblue;
+    text-align:none;
+    text-decoration:blue wavy;
+    font-weight: 1000px;
+    font-family:monospace;
+    font-size :30px;
+    line-height:normal;
+    text-transform: uppercase;
+}
+#reett{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Times New Roman';
+}
+div{
+    height: 100px;
+    background-color: chocolate;
+    width:50px;
+    border: 4px solid black;
+    padding-bottom: 10px;
+    margin-top: 25px;
+
+}
+div1{
+    height:100px;
+    width:100px;
+    background-color: green;
+    border-radius:50%;
+    
+}

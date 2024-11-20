@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #35424a;
+            margin-top: 0;
+        }
+        
+        #about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .project {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #skills ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #skills li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hello I'm Siri Vempati.<br><br>
+        I'm Good at FrontEnd Development,BackEnd Development,Data Sceience,Machine Learning</p>
+        <img src="https://cdn.vectorstock.com/i/500p/53/42/user-member-avatar-face-profile-icon-vector-22965342.jpg" alt="Profile Picture">
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-grid">
+            <div class="project">
+                <img src="https://www.acgil.com/images/blood-bank.jpg" alt="Project 1">
+                <h2>BLOOD BANKING SYSTEM</h2>
+                <p>The "Blood Banking System-Reforming Blood
+                    Donation and Emergency Blood Requests"
+                    presents a comprehensive digital solution
+                    designed to reshape the blood donation and
+                    emergency blood requests. Integrated with
+                    advanced technology with healthcare needs, this
+                    system offers user-centric functionalities. With
+                    this user-friendly system, people wanting to
+                    donate blood can easily sign up, provide
+                    important health information, and verify their
+                    blood test results with integrated security to
+                    maintain user data privacy</p>
+                    <p>A brief description of the project.</p>
+                    <a href="https://github.com/username/bloodbankingsystem" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <img src="https://cfms3bucket.s3.us-west-1.amazonaws.com/1697294566279-TTP%20Logo_EmailSignature.png" alt="Project 2">
+                <h2>TASTY PLATE</h2>
+                <p>Cooking is not only a work but also an art. 
+                    It is not confined to anything it can be 
+                    learnt by anyone who definitely wants to and
+                    that is only possible when you have a right guide
+                    to help you learn it. Welcome to Tasty Plate,
+                    our website provides you a platform to learn 
+                    and cook popular cuisines across all countries.
+                    We provide a beginner friendly cooking processes 
+                    that helps you to learn making your favourite dish</p>
+                    <p>A brief description of the project.</p>
+                    <a href="https://github.com/username/tastyplate" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <img src="https://imgcdn.floweraura.com/classification-of-flowering-plant.jpg" alt="Project 3">
+                <h2>FLOWERS CLASSIFICATION SYSTEM</h2>
+                <p>FLOWERS Classification aims to classify Iris flowers 
+                into different species based on their sepal and 
+                petal measurements. It utilizes the popular Iris
+                dataset, which contains measurements of four features 
+                (sepal length, sepal width, petal length, and petal width) 
+                for three different Iris species (Setosa, Versicolor, and
+                Virginica). The dataset consists of 150 samples, with 
+                each sample having four feature values and a corresponding 
+                target label. Several classification models are implemented
+                in this project to classify the Iris flowers: Decision Tree 
+                Classifier Random Forest Classifier K- Nearest Neighbors
+                (KNN) Classifier Support Vector Machines (SVM) Classifier 
+                Gradient Boosting Classifier The models are trained using 
+                the Iris dataset and evaluated using various evaluation 
+                metrics such as accuracy, precision, recall, and F1-score.</p>
+                <p>A brief description of the project.</p>
+                <a href="https://github.com/username/flowersclassification" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Connect Via<br><br>
+            GMAIL<br>
+            GITHUB-<br>
+            LINKEDIN<br>
+            X<br>
+            WHATSAPP<br>
+
+        </p>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <p>If you'd like to get in touch, you can reach me at <a href="mailto:vempati siri @example.com">vempati siri @example.com</a>.</p>
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+    </body>
+    </html>

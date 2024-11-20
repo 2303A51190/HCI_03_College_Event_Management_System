@@ -1,0 +1,14 @@
+p{
+    background-color: aquamarine;
+    color:black;
+}
+.login-form{
+    margin-left: 250px;
+    margin-right: 500px;
+    margin-top: 200px;
+    margin-bottom: 500px;
+    padding-left: 300px;
+}
+button{
+    hover:green;
+}

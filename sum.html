@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of given numbers</title>
+    <script>
+        function sum(){
+            let x,y,z;
+            x=parseInt(document.getElementById("a").value);
+            y=parseInt(document.getElementById("b").value);
+            z=x+y;
+            document.writeln(z);
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Addtion of 2 numbers</h1>
+    a:<input type="text" id="a">
+    <br><br>
+    b:<input type="text" id="b">
+    <br><br>
+    <button type="button" value="sum" onclick="sum()">Sum</button>
+    <br><br>
+</body>
+</html>
+

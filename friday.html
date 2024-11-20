@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friday Schedule</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f8f8f8;
+      background: url(' https://wallpapers.com/images/hd/back-to-school-background-7a4mne5n4gwzobzr.jpg') no-repeat center center fixed;
+      
+    }
+    .container {
+      width: 600px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .header {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .schedule {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+    .column {
+      width: 30%;
+    }
+    .column h3 {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    .column p {
+      margin: 5px 0;
+      font-size: 1em;
+    }
+    .side-graphics {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .side-graphics.left {
+      left: -50px;
+      background-image: url('path/to/your/left-graphic.png');
+    }
+    .side-graphics.right {
+      right: -50px;
+      background-image: url('path/to/your/right-graphic.png');
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Friday</div>
+    <div class="schedule">
+      <div class="column">
+        <h3>Activities</h3>
+        <p>1. Orientation</p>
+        <p>2. Guest Lectures</p>
+        <p>3. Public debate</p>
+        <p>4. Academic</p>
+      </div>
+      <div class="column">
+        <h3>Venue</h3>
+        <p>Srix</p>
+        <p>Guest hall</p>
+        <p>Seminar hall</p>
+        <p>1st block</p>
+      </div>
+      <div class="column">
+        <h3>Time</h3>
+        <p>9.00 to 10.00</p>
+        <p>10.00 to 11.00</p>
+        <p>11.00 to 12.00</p>
+        <p>2.00 to 3.00</p>
+      </div>
+    </div>
+    <div class="side-graphics left"></div>
+    <div class="side-graphics right"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events of the Day</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #b3e5fc;
+            background-image: url('https://www.teahub.io/photos/full/43-434733_1082x1920-plain-white-background-wallpaper-vertical-blue-and.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .calendar {
+            display: table;
+            background-color:#E7FBE6;
+            width: 50%;  
+            margin: 0 auto 20px auto;
+            font-size: 14px;  
+            font-weight: bold;
+            color: #333;
+            border-radius: 8px;
+            border-collapse: collapse;
+        }
+        .calendar th, .calendar td {
+            padding: 5px; 
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        .calendar th {
+            background-color: #4fc3f7;
+            color: white;
+        }
+        .calendar .empty {
+            background-color: #f5f5f5;
+        }
+        .table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            font-size: 18px;
+            color: #333;
+        }
+        .table th, .table td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+        .table th {
+            background-color: #4fc3f7;
+            color: white;
+            font-weight: bold;
+        }
+        .table td {
+            background-color: #e1f5fe;
+        }
+        a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Events of the Day</div>
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Activities</th>
+                    <th>Venue</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HCI Presentation</td>
+                    <td>Lab</td>
+                    <td><a href="#">11:00 to 1:00</a></td>
+                </tr>
+                <tr>
+                    <td>Workshop</td>
+                    <td>Srix</td>
+                    <td><a href="#">2:00 to 3:00</a></td>
+                </tr>
+                <tr>
+                    <td>Meeting</td>
+                    <td>HOD Cabin</td>
+                    <td><a href="#">10:00 to 10:30</a></td>
+                </tr>
+                <tr>
+                    <td>Clubs</td>
+                    <td>ECE Seminar Hall</td>
+                    <td><a href="#">3:00 to 4:00</a></td>
+                </tr>
+                <tr>
+                    <td>Flash Mob</td>
+                    <td>3rd Block</td>
+                    <td><a href="#">4:00 to 5:00</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

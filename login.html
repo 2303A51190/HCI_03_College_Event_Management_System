@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: aliceblue;
+            border: 2px solid aliceblue;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        #image {
+            height: 800px;
+            width: 100%;
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 300px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .input-container i {
+            font-size: 20px;
+            color: gray;
+            margin: 0 10px;
+        }
+        input {
+            font-size: 16px;
+            padding: 8px;
+            width: 100%;
+            border: none;
+            outline: none;
+            color: #333;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: aliceblue;
+            background-color: #007bff;
+            width: 100%;
+            max-width: 200px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        function check() {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            if (!username) {
+                alert('Please enter your username.');
+                return;
+            }
+            if (!password) {
+                alert('Please enter your password.');
+                return;
+            }
+            if (username === 'user' && password === 'password') {
+                alert('You have successfully logged in');
+                redirectToHome();
+            } else {
+                alert('Invalid username or password.');
+            }
+
+            function redirectToHome() {
+                window.location.href = 'events.html';
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="image" src="https://wallpapercave.com/wp/wp2951423.png" alt="Background Image">
+    <div class="text-overlay">
+        <i class="fa-regular fa-user" style="font-size: 36px; color:aliceblue;"></i>
+        <h1>Login</h1>
+        <div class="input-container">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" id="username" placeholder="Enter your Username">
+        </div>
+        <br>  
+        <div class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Enter your Password">
+        </div>
+        <br>
+        <button onclick="check()">Submit</button>
+    </div>
+</body>
+</html>

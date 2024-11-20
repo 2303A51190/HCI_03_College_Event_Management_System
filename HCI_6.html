@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color:black;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+        
+        .product-filter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+        }
+        
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .product-card h2 {
+            margin-top: 0;
+        }
+        
+        .product-card p {
+            margin-bottom: 1em;
+        }
+        
+        .product-card button {
+            background-color:chocolate;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .product-card button:hover {
+            background-color:coral;
+        }
+        footer {
+            margin-top: 50px;
+            background-color:darkgray;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Brands for you</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cosmectics & Skincare Products</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://www.byrdie.com/thmb/IynrD0Ftkc_-SF5AnN5v7Xxz_eY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dior-5071fe95d80c4453befb89c5dddd394e.png" alt="DIOR Lipsticks">
+                <h2>Blue HeavenLipsticks</h2>
+                <p>Category: Beauty Products</p>
+                <p>Price: ₹299</p>
+                    <div class="rating">
+                        &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)
+                      </div>
+                <button>Buy Now</button>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/originals/87/f8/84/87f88472a1923d45f004fd861b34fb24.jpg" alt="Louis Vuitton Foundations">
+                <h2> Sugar Foundations</h2>
+                <p>Category: Beauty Products</p>
+                <p>Price: ₹599</p>
+                <div class="rating">
+                    &#9733;&#9733;&#9733;&#9733;&#9734; (4.5/5)
+                  </div>
+                  <button>Buy Now</button>
+                  <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn-kglcp.nitrocdn.com/SHzaNANRXFrCblvqwWjtxqWqqvNwNsjl/assets/images/optimized/rev-f6baabb/www.smartphotoeditors.com/blog/wp-content/uploads/2023/11/mac-cosmetics-2.jpg" alt="Compacts">
+                <h2>Mac Compacts</h2>
+                <p>Category:Beauty Products </p>
+                <p>Price: ₹2500</p>
+                <div class="rating">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; (5/5)
+                  </div>
+                  <button>Buy Now</button>
+                  <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://swissbeauty.in/cdn/shop/files/1_be199688-77e6-41fc-80ff-11f82e816a6b.jpg?v=1695821295" alt="Mascara">
+                <h2>Maybelline Mascara</h2>
+                <p>Category:Beauty Products </p>
+                <p>Price: ₹312</p>
+                <div class="rating">
+                    &#9733;&#9733;&#9733;&#9733;&#9734; (4.5/5)
+                  </div>
+                  <button>Buy Now</button>
+                  <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://shop.lakmesalon.in/cdn/shop/products/SIZE-W-600X-H-600-PX-24815--2.jpg?v=1625048864&width=1445" alt="Primers">
+                <h2>Lakme Primers</h2>
+                <p>Category:Beauty Products </p>
+                <p>Price: ₹399</p>
+                <div class="rating">
+                    &#9733;&#9733;&#9733;&#9733;&#9734; (4/5)
+                  </div>
+                  <button>Buy Now</button>
+                  <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/5171/5bafaead-3d2e-40c0-97d2-4f5edc2e350a.jpg" alt="Sunscreens">
+                <h2>Plum Sunscreen</h2>
+                <p>Category:Beauty Products </p>
+                <p>Price: ₹409</p>
+                <div class="rating">
+                    &#9733;&#9733;&#9733;&#9733;&#9733; (5/5)
+                  </div>
+                  <button>Buy Now</button>
+                  <button>Add to Cart</button>
+            </div>
+    </main>
+    <footer>
+        <p>@2024 Company Name</p>
+        <p>Terms & Conditions
+            Fees & Payments
+            Cancellation & Refund Policy
+            Privacy Policy
+            Shipping & Delivery Policy
+            Rewards Policy
+            Promotions Terms & Conditions
+            </p>
+    </footer>
+</body>
+</html>
